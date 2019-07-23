@@ -29,6 +29,11 @@ public class Shohin {
     private Integer shiireTanka;
     private Date torokubi;
 
+    @Override
+    public String toString() {
+        return shohinId + "  " + shohinMei + "  " + shohinBunri + "  " + String.valueOf(hanbaiTanka) + "  " + String.valueOf(shiireTanka) + "  " + String.valueOf(torokubi);
+    }
+
 
     public String getShohinId() {
         return shohinId;
