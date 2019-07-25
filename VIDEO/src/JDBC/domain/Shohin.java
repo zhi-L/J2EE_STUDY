@@ -11,6 +11,11 @@ import java.util.Date;
  **/
 public class Shohin {
 
+    /*
+    在没有提供构造函数的时候，会默认提供无参构造函数
+    当自定义有参数的构造函数后，默认的构造函数不在存在
+    需要自定义一个无参构造函数
+     */
     public Shohin() {}
 
     public Shohin(String shohinId, String shohinMei, String shohinBunri, Integer hanbaiTanka, Integer shiireTanka, Date torokubi) {

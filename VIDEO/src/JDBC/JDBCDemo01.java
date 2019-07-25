@@ -45,7 +45,7 @@ public class JDBCDemo01 {
         Connection con = DriverManager.getConnection(jdbcUrl, name, password);
 
         // 3、获得语句执行平台，通过数据库，获取到SQL语句的执行者对象。
-        // TODO,这里使用建议使用preparedStatement()来防止注入攻击
+        // TODO,这里使用建议使用preparedStatement()来防止注入攻击，见JDBCDemo2
         Statement stat = con.createStatement();
 
         // 4、执行sql语句
